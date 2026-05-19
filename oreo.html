@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bella - Little Hooman</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header>
+<nav>
+<h1>🐾 Little Hooman</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="authLink" class="dropdown"></li>
+</ul>
+</nav>
+</header>
+
+<section class="pet-profile">
+<img src="images/img18.jpg" alt="Bella">
+<div class="pet-info">
+<h2>Oreo</h2>
+<p><strong>Age:</strong> 1 Year</p>
+<p><strong>Breed:</strong> Indie Cat</p>
+<p><strong>Gender:</strong> Male</p>
+<p><strong>Previous Owner:</strong> Rescue</p>
+<p><strong>Allergies:</strong> None</p>
+<p><strong>Medical History:</strong> Vaccinated</p>
+<p><strong>Temperament:</strong> Playful</p>
+
+    <button onclick="handleAdopt('Oreo')" class="btn">Adopt Me 🐾</button>
+</div>
+</section>
+<div id="adoptModal" class="popup">
+    <div class="popup-content">
+        <h3>Adopt <span id="petNameDisplay"></span> 🐾</h3>
+        <p>Tell us why you're a good match!</p>
+        <div class="volunteer-form">
+            <input type="text" id="adoptName" placeholder="Your Full Name" required>
+            <input type="email" id="adoptEmail" placeholder="Your Email" required>
+            <textarea id="adoptMsg" placeholder="Describe your home environment..." rows="4"></textarea>
+            <button class="btn" onclick="submitAdopt()">Submit Application</button>
+            <button onclick="closeModal()" style="background:none; border:none; color:#888; margin-top:10px; cursor:pointer;">Cancel</button>
+        </div>
+    </div>
+</div>
+<script src="navbar.js"></script><script src="site.js"></script>
+<script src="adopt.js"></script>
+<footer>
+
+<p>© 2026 Little Hooman Animal Shelter. All Rights Reserved.</p>
+
+</footer>
+</body>
+</html>

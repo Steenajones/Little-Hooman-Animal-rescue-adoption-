@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Volunteer | Little Hooman</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>🐾 Little Hooman</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="authLink" class="dropdown">
+    </li></ul>
+</nav>
+</header>
+
+<section class="volunteer-section">
+
+<h2>Volunteer With Us</h2>
+
+<!-- ✅ FORM -->
+<div id="volunteerFormSection">
+
+<form id="volunteerForm" class="volunteer-form">
+
+<input type="text" id="vname" placeholder="Your Name" required>
+<input type="email" id="vemail" placeholder="Your Email" required>
+<input type="text" id="vphone" placeholder="Phone Number" required>
+
+<textarea id="vmessage" placeholder="Why do you want to volunteer?" required></textarea>
+
+<button type="submit" class="btn">Submit Application</button>
+
+</form>
+
+</div>
+
+<!-- ✅ DASHBOARD (HIDDEN INITIALLY) -->
+<div id="volunteerDashboard" style="display:none;">
+
+<h3 style="margin-bottom:20px;">🎉 Registration Completed</h3>
+
+<div class="dashboard-container">
+
+<!-- PROGRAMS -->
+<div class="dashboard-box">
+<h4>Available Volunteer Programs</h4>
+
+<ul>
+<li>🐶 Animal Rescue Missions</li>
+<li>🍲 Feeding Drives</li>
+<li>🏥 Medical Assistance</li>
+<li>🏠 Adoption Events</li>
+</ul>
+
+</div>
+
+<!-- HISTORY -->
+<div class="dashboard-box">
+<h4>Your Volunteer History</h4>
+
+<div id="historyList">
+<p>No activity yet</p>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SUCCESS POPUP -->
+
+<div class="popup" id="successPopup">
+
+<div class="popup-content">
+
+<h3>🎉 Registration Successful!</h3>
+
+<p>
+You have successfully registered for the volunteer program.<br>
+Go to your dashboard to track your activity ✅
+</p>
+
+<button class="btn" onclick="closePopup()">OK</button>
+
+</div>
+
+</div>
+
+
+<footer>
+<p>© 2026 Little Hooman Animal Shelter. All Rights Reserved.</p>
+</footer>
+
+
+
+
+<script src="navbar.js"></script><script src="site.js"></script>
+</body>
+</html>

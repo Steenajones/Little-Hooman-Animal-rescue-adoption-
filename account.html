@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Account</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>🐾 Little Hooman</h1>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="dashboard.html">Volunteer Dashboard</a></li>
+<li id="authLink" class="dropdown">
+    </li>
+</ul>
+</nav>
+</header>
+
+<section style="padding:60px 20px; text-align:center;">
+    <div id="userInfo" style="display:none;"></div>
+
+    <div id="authForms" style="display:none;">
+        <h2 id="formTitle">Welcome Back</h2>
+        
+        <div class="auth-box" style="max-width:400px; margin:auto;">
+            <div id="loginForm">
+                <input type="email" id="loginEmail" placeholder="Email">
+                <div class="password-field" style="margin:10px 0;">
+                  <input type="password" id="loginPassword" placeholder="Password">
+                  <button type="button" class="toggle-password" aria-label="Show password" onclick="togglePassword('loginPassword', this)">Show</button>
+                </div>
+                <button class="btn" onclick="loginUser()">Login</button>
+                <p style="margin-top:15px;">New here? <span class="toggle-link" onclick="toggleAuth('signup')">Create Account</span></p>
+            </div>
+
+            <div id="signupForm" style="display:none;">
+                <input type="text" id="signupName" placeholder="Full Name">
+                <input type="email" id="signupEmail" placeholder="Email">
+                <div class="password-field" style="margin:10px 0;">
+                  <input type="password" id="signupPassword" placeholder="Create Password">
+                  <button type="button" class="toggle-password" aria-label="Show password" onclick="togglePassword('signupPassword', this)">Show</button>
+                </div>
+                <button class="btn" onclick="signupUser()">Sign Up</button>
+                <p style="margin-top:15px;">Already have an account? <span class="toggle-link" onclick="toggleAuth('login')">Login</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="navbar.js"></script>
+<script src="site.js"></script>
+

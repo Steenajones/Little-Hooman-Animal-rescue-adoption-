@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Payment | Little Hooman</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<h1>🐾 Little Hooman</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="authLink" class="dropdown">
+    </li>
+</nav>
+</header>
+
+<section class="payment-section">
+
+<h2>Select Payment Method</h2>
+
+<div class="payment-options">
+
+<div class="payment-option" onclick="showPayment('card')">
+💳 Debit / Credit Card
+</div>
+
+<div class="payment-option" onclick="showPayment('upi')">
+📱 UPI Payment
+</div>
+
+<div class="payment-option" onclick="showPayment('netbanking')">
+🏦 Net Banking
+</div>
+
+</div>
+
+<!-- CARD PAYMENT FORM -->
+<div id="card" class="payment-form">
+
+<h3>Card Details</h3>
+
+<input type="text" placeholder="Cardholder Name" required>
+
+<input type="text" placeholder="Card Number" required>
+
+<input type="text" placeholder="Expiry Date (MM/YY)" required>
+
+<input type="text" placeholder="CVV" required>
+
+<button class="btn">Pay Now</button>
+
+</div>
+
+<!-- UPI PAYMENT FORM -->
+<div id="upi" class="payment-form">
+
+<h3>UPI Payment</h3>
+
+<input type="text" placeholder="Enter UPI ID (example@upi)" required>
+
+<button class="btn">Pay Now</button>
+
+</div>
+
+<!-- NET BANKING FORM -->
+<div id="netbanking" class="payment-form">
+
+<h3>Net Banking</h3>
+
+<select>
+
+<option>Select Bank</option>
+<option>SBI</option>
+<option>HDFC</option>
+<option>ICICI</option>
+<option>Axis Bank</option>
+
+</select>
+
+<input type="text" placeholder="User ID">
+
+<input type="password" placeholder="Password">
+
+<button class="btn">Pay Now</button>
+
+</div>
+
+</section>
+
+
+<script src="navbar.js"></script><script src="site.js"></script>
+<footer>
+
+<p>© 2026 Little Hooman Animal Shelter. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>

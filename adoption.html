@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Adoption Form - Little Hooman</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<header>
+<nav>
+<h1>🐾 Little Hooman</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="authLink" class="dropdown">
+    </li>
+</ul>
+</nav>
+</header>
+
+<section class="adoption-section">
+
+<div class="adoption-box" id="formSection">
+
+<h2 id="selectedPetTitle">Adoption Application 🐾</h2>
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="email" id="email" placeholder="Email" required>
+<input type="text" id="phone" placeholder="Phone Number" required>
+
+<select id="pets" required>
+  <option value="">Do you have pets already?</option>
+  <option>Yes</option>
+  <option>No</option>
+</select>
+
+<select id="home" required>
+  <option value="">Living Situation</option>
+  <option>Apartment</option>
+  <option>House</option>
+</select>
+
+<textarea id="message" placeholder="Why do you want to adopt this pet?" required></textarea>
+
+<button class="btn" onclick="submitAdoption()">Submit Application</button>
+
+</div>
+
+<div class="success-msg" id="successMsg">
+🎉 Your adoption request has been submitted successfully!
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Little Hooman Animal Shelter. All Rights Reserved.</p>
+</footer>
+
+<script src="navbar.js"></script><script src="site.js"></script>
+
+
+<div id="successPopup" class="popup">
+  <div class="popup-content">
+    <h3>🎉 You're officially awesome!</h3>
+
+    <p>
+      Thank you for applying to adopt 🐾<br><br>
+      📩 Further steps have been sent to your email.<br>
+      🐶 Get ready — you're going to LOVE being a pet parent!
+    </p>
+
+    <button class="btn" onclick="goHome()">Yay! 🐾</button>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

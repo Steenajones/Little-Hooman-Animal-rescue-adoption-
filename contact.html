@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Contact | Little Hooman</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+<header>
+
+<nav>
+
+<h1>🐾 Little Hooman</h1>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="adopt.html">Adopt</a></li>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="volunteer.html">Volunteer</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li id="authLink" class="dropdown">
+    </li></ul>
+
+</nav>
+
+</header>
+
+<section class="contact-page">
+
+<h2>Contact Us</h2>
+
+<p>We would love to hear from you.</p>
+
+<form id="contactForm" class="contact-form">
+
+<input type="text" id="cname" placeholder="Your Name" required>
+<input type="email" id="cemail" placeholder="Your Email" required>
+
+<textarea id="cmessage" placeholder="Your Message" required></textarea>
+
+<button type="submit" class="btn">Send Message</button>
+
+</form>
+
+<p id="successMessage" class="success-message">
+Message sent successfully! ✅ <br>
+Thank you for reaching out to us. <br>
+Please check your email for further assistance.
+</p>
+
+<button id="backButton" class="btn" onclick="location.reload()">
+Go Back
+</button>
+
+</section>
+
+<footer>
+<p>© 2026 Little Hooman Animal Shelter. All Rights Reserved.</p>
+</footer>
+
+
+
+<div id="contactPopup" class="popup">
+  <div class="popup-content">
+    <h3>💌 Message Sent!</h3>
+
+    <p>
+      Thank you for reaching out 🐾<br><br>
+      We’ll get back to you soon.<br>
+      Stay pawsome! 🐶❤️
+    </p>
+
+    <button class="btn" onclick="closeContactPopup()">OK</button>
+  </div>
+</div>
+
+<script src="navbar.js"></script><script src="site.js"></script>
+
+
+
+</body>
+
+</html>
